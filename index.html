@@ -49,10 +49,10 @@ body {
     color: var(--gold);
 }
 
-/* HERO (FULL IMAGE, NO CROP, CLEAN FRAME) */
+/* HERO (ALIGNED WITH CARD) */
 .hero {
     width: 94%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 20px auto 0;
     height: 320px;
     background: url('24CE78A9-09E1-44A6-B873-EB541278BA4E.png') center center no-repeat;
@@ -60,34 +60,35 @@ body {
     background-color: #0F1720;
     border-radius: 14px;
     position: relative;
-    overflow: hidden;
 }
 
-/* SOFT GLOW */
+/* GLOW */
 .hero::before {
     content: "";
     position: absolute;
-    inset: -20px;
+    inset: -8px;
+    border-radius: 16px;
     background: radial-gradient(
         ellipse at center,
-        rgba(212, 175, 55, 0.10),
+        rgba(212, 175, 55, 0.08),
         transparent 70%
     );
-    filter: blur(30px);
+    filter: blur(18px);
     z-index: -1;
 }
 
 /* CONTENT */
 .container {
+    width: 94%;
+    max-width: 900px;
+    margin: 10px auto 0;
+    padding: 0 15px;
     display: flex;
     justify-content: center;
-    padding: 30px 15px;
-    margin-top: -10px;
 }
 
 .card {
     width: 100%;
-    max-width: 900px;
     background: var(--bg-main);
     padding: 35px;
     border-radius: 12px;
