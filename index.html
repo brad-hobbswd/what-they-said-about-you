@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>What Was Said About You | Bradley Hobbs</title>
+
+<style>
+:root {
+    --bg-dark: #0F1720;
+    --bg-main: #1C2530;
+    --gold: #D4AF37;
+    --gold-soft: #E6C76B;
+    --text-light: #F5F5F5;
+    --text-muted: #A8B0B8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+/* NAV */
+.navbar {
+    background: rgba(15, 23, 32, 0.95);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: var(--gold-soft);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: var(--gold);
+}
+
+/* HERO (Banner Only) */
+.hero {
+    width: 100%;
+    height: clamp(260px, 50vw, 520px);
+    background: url('YOUR-BANNER-IMAGE.png') center/cover no-repeat;
+}
+
+/* CONTENT */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.card {
+    width: 100%;
+    max-width: 900px;
+    background: var(--bg-main);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* TEXT */
+h1 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.85;
+    font-size: clamp(16px, 2.5vw, 18px);
+    margin-bottom: 18px;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: var(--gold);
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: var(--gold-soft);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="introduction.html">Start</a>
+<a href="contents.html">Contents</a>
+<a href="about.html">About</a>
+</div>
+
+<!-- HERO -->
+<div class="hero"></div>
+
+<!-- CONTENT -->
+<div class="container">
+<div class="card">
+
+<h1>What Was Said About You</h1>
+<div class="subtitle">Understanding the impact of workplace gossip</div>
+
+<p>
+Some situations shift without warning. Conversations happen elsewhere, and outcomes begin to change before any explanation is offered. A person may notice distance, altered tone, or hesitation in interactions without knowing what caused the change.
+</p>
+
+<p>
+Information shared in private settings often travels further than expected. Details become interpretations. Interpretations become conclusions. Over time, those conclusions shape perception in ways that influence decisions, relationships, and opportunities.
+</p>
+
+<p>
+The result is confusion. Something feels different, yet no clear source can be identified. Efforts to understand the shift may lead to overthinking, self-questioning, or withdrawal.
+</p>
+
+<p>
+This work examines how those patterns develop, how they affect individuals, and how clarity can be restored. Awareness creates the ability to respond with confidence rather than uncertainty.
+</p>
+
+<p>
+Understanding what happened allows forward movement without carrying what does not belong to you.
+</p>
+
+<a href="introduction.html" class="button">Begin the Book</a>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2026 Bradley Hobbs
+</div>
+
+</body>
+</html>
