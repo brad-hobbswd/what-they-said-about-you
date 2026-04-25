@@ -50,18 +50,20 @@ body {
 }
 
 /* HERO (FIXED + RESPONSIVE + GLOW) */
+/* HERO (NO CROP + RESPONSIVE + CLEAN) */
 .hero {
     width: 94%;
     max-width: 1200px;
     margin: 20px auto 0;
-    aspect-ratio: 16 / 9;
-    background: url('24CE78A9-09E1-44A6-B873-EB541278BA4E.png') center/cover no-repeat;
+    padding-top: 40%; /* 👈 controls height responsively */
+    background: url('24CE78A9-09E1-44A6-B873-EB541278BA4E.png') center/contain no-repeat;
+    background-color: #0F1720; /* fills empty space cleanly */
     border-radius: 14px;
     position: relative;
     overflow: hidden;
 }
 
-/* SOFT GLOW BEHIND */
+/* SOFT GLOW */
 .hero::before {
     content: "";
     position: absolute;
