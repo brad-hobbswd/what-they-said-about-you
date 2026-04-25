@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Section 1 | What Was Said About You</title>
+
+<style>
+:root {
+    --bg-dark: #0F1720;
+    --bg-main: #1C2530;
+    --gold: #D4AF37;
+    --gold-soft: #E6C76B;
+    --text-light: #F5F5F5;
+    --text-muted: #A8B0B8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+/* NAV */
+.navbar {
+    background: rgba(15, 23, 32, 0.95);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: var(--gold-soft);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--gold);
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    max-width: 850px;
+    background: var(--bg-main);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* TEXT */
+h1 {
+    text-align: center;
+    color: var(--gold);
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--gold-soft);
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+p {
+    line-height: 1.9;
+    font-size: clamp(16px, 2.5vw, 18px);
+    margin-bottom: 18px;
+}
+
+/* CHAPTER LIST */
+.chapter-list a {
+    display: block;
+    padding: 10px 0;
+    color: var(--text-light);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.chapter-list a:hover {
+    color: var(--gold-soft);
+}
+
+/* BUTTON */
+.button {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    padding: 12px;
+    background: var(--gold);
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: var(--gold-soft);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="contents.html">Contents</a>
+<a href="about.html">About</a>
+</div>
+
+<div class="container">
+
+<!-- SECTION INTRO -->
+<div class="card">
+
+<h1>Section 1</h1>
+<h2>The Impact of Gossip</h2>
+
+<p>
+Gossip rarely begins as something that appears harmful. It often starts as a passing comment, a shared observation, or a conversation that seems ordinary in the moment. Over time, those moments connect, forming patterns that shape how people are perceived and treated within an environment.
+</p>
+
+<p>
+Information shared without full context can quickly become interpretation. Interpretation, when repeated, begins to feel like fact. As those patterns spread, they influence decisions, relationships, and opportunities, often without direct communication ever taking place.
+</p>
+
+<p>
+For the person at the center of these conversations, the experience can be difficult to understand. Interactions begin to change. Responses feel different. Something has clearly shifted, yet the reason remains out of reach. This disconnect creates uncertainty and can lead to self-doubt, hesitation, and withdrawal.
+</p>
+
+<p>
+This section examines how gossip forms, how it spreads, and how it gains influence within groups. It also explores the early impact on individuals, including the emotional and psychological effects that often go unrecognized.
+</p>
+
+<p>
+Understanding these patterns provides a foundation for everything that follows. Awareness allows you to recognize what is happening, separate perception from reality, and begin to move forward with clarity.
+</p>
+
+</div>
+
+<!-- CHAPTER LIST -->
+<div class="card">
+
+<h2>Chapters</h2>
+
+<div class="chapter-list">
+<a href="chapter1.html">Chapter 1: The Nature of Gossip</a>
+<a href="chapter2.html">Chapter 2: Hidden Wounds</a>
+<a href="chapter3.html">Chapter 3: Silence and Isolation</a>
+<a href="chapter4.html">Chapter 4: The Power of Labels</a>
+<a href="chapter5.html">Chapter 5: When Perception Becomes Reality</a>
+</div>
+
+<a href="chapter1.html" class="button">Start Section</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
